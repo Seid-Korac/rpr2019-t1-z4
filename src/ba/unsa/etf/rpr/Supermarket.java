@@ -9,6 +9,7 @@ public class Supermarket {
     public void dodajArtikl (Artikl a){
         if (counter >= 1000) {
             System.out.println("Dostignut je kapacitet supermarketa");
+
             return;
         }
         sviArtilki[counter] = a;
@@ -33,6 +34,7 @@ public class Supermarket {
         }
         return null;
     }
+
     private void ispisiArtikle() {
         for (int i = 0; i < counter; i++) {
             System.out.println(sviArtilki[i].getNaziv() + " " + sviArtilki[i].getCijena() + " " + sviArtilki[i].getKod());
